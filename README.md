@@ -5,5 +5,5 @@ Add tap to your local homebrew installation:
 
 Install phraseapp client:
 
-		brew install phrase/phrase/phraseapp
+		brew install phraseapp
 
