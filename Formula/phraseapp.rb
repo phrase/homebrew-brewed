@@ -12,7 +12,6 @@ class Phraseapp < Formula
   url "https://github.com/phrase/phraseapp-client/releases/download/#{version}/phraseapp_macosx_amd64.tar.gz"
 
   def install
-    bin.install "phraseapp_macosx_amd64"
-    mv "phraseapp_macosx_amd64", "phraseapp"
+    bin.install "phraseapp"
   end
 end
