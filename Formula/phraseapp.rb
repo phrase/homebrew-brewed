@@ -7,11 +7,12 @@ class Phraseapp < Formula
   homepage "https://phraseapp.com/cli"
 
   version "1.1.12"
-  sha256 "384b88c2e8972beece8aa37e217d1f13114199572d90674f7f28825d624bb0fd"
+  sha256 "c83c5745cbadea2eada2efb901ad8998a939a2e3c29006ca30da8220a3c0a245"
 
   url "https://github.com/phrase/phraseapp-client/releases/download/#{version}/phraseapp_macosx_amd64.tar.gz"
 
   def install
-    bin.install "phraseapp"
+    bin.install "phraseapp_macosx_amd64"
+    mv "phraseapp_macosx_amd64", "phraseapp"
   end
 end
