@@ -6,8 +6,8 @@ class Phraseapp < Formula
   desc "PhraseApp CLI Tool - API client binary"
   homepage "https://phraseapp.com/cli"
 
-  version "1.1.19"
-  sha256 "8d0ce12a915765946ef57a4d044a364a72e8102c05709579bd3094aaab46b823"
+  version "1.2.0"
+  sha256 "f2802da7d2d8d586009a4a791008fa4fe17acf991c91db5f60372fbad76abb49"
 
   url "https://github.com/phrase/phraseapp-client/releases/download/#{version}/phraseapp_macosx_amd64.tar.gz"
 
