@@ -7,7 +7,7 @@ class Phraseapp < Formula
   homepage "https://phraseapp.com/cli"
 
   version "1.6.1"
-  sha256 "f3f0ac8e81edc78cf7b33c7efac28808745a5cf97b5f140b08079d17aec15e20"
+  sha256 "c25309d792917bb28628b79d1d5f7c14763c14fed9d9fc5bcbc9d98d3fb31e66"
 
   url "https://github.com/phrase/phraseapp-client/releases/download/#{version}/phraseapp_macosx_amd64.tar.gz"
 
