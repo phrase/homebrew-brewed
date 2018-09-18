@@ -15,4 +15,3 @@ class Phraseapp < Formula
     bin.install "phraseapp"
   end
 end
-q
