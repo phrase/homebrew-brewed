@@ -7,17 +7,17 @@ class Phraseapp < Formula
   homepage 'https://phraseapp.com/cli'
   GITHUB_URL = 'https://github.com/phrase/phraseapp-client/releases/download'
 
-  version '1.13.0'
+  version '1.14.0'
   if OS.linux?
     if OS.respond_to?(:bits) && OS.bits == 32
-      sha256 'a55337ac35fb571ea2a608520ac8d014157fc8e9404774254719d8074db9fb06'
+      sha256 '9aa5b23be464c3a12dd011edf5480d5bc0bbc814bf09b5a49f80e7db89551abd'
       url "#{GITHUB_URL}/#{version}/phraseapp_linux_386.tar.gz"
     else
-      sha256 '375422767155c6ccd2aa2a94df6fa8d2caf307fb6176d74ba8e2bed4ce5c70e6'
+      sha256 '016ff776f04154460e86dc49c6b0d091e05bb414c004853be1bf3bab53f42bc9'
       url "#{GITHUB_URL}/#{version}/phraseapp_linux_amd64.tar.gz"
     end
   else
-    sha256 '9a20ac632b58263ed1360af46970db8c4b1d5d3e098ebd652c1ee2d8a891ce4c'
+    sha256 '0633a8c3f7fb7412fac1f9d19cc91ede584182d729b70485d2c642a90450c922'
     url "#{GITHUB_URL}/#{version}/phraseapp_macosx_amd64.tar.gz"
   end
 
