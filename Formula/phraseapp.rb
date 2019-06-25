@@ -7,7 +7,7 @@ class Phraseapp < Formula
   homepage 'https://phraseapp.com/cli'
   GITHUB_URL = 'https://github.com/phrase/phraseapp-client/releases/download'
 
-  version '1.14.2'
+  version '1.15.0'
   if OS.linux?
     if OS.respond_to?(:bits) && OS.bits == 32
       sha256 'b5285e40228efa079c33aab251b5cbeb6f01cc075243a9b3249f40b3519683c3'
