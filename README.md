@@ -1,9 +1,10 @@
-# Homebrew tap for PhraseApp
+# Homebrew tap for Phrase
+
 Add tap to your local homebrew installation:
 
-		brew tap phrase/brewed
+    brew tap phrase/brewed
 
 Install phraseapp client:
 
-		brew install phraseapp
+    brew install phraseapp
 
