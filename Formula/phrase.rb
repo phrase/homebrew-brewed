@@ -3,7 +3,7 @@ class Phrase < Formula
   homepage "https://phrase.com/cli"
   GITHUB_URL = "https://github.com/phrase/phrase-cli/releases/download".freeze
 
-  version "2.0.3"
+  version "2.0.4"
   if OS.linux?
     if OS.respond_to?(:bits) && OS.bits == 32
       sha256 "ee599c1e07f6c36782e6d460f59ef2884b4d0f2961e4dd962e12c805b27aa175"
