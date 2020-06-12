@@ -3,17 +3,17 @@ class Phrase < Formula
   homepage "https://phrase.com/cli"
   GITHUB_URL = "https://github.com/phrase/phrase-cli/releases/download".freeze
 
-  version "2.0.4"
+  version "2.0.5"
   if OS.linux?
     if OS.respond_to?(:bits) && OS.bits == 32
-      sha256 "ee599c1e07f6c36782e6d460f59ef2884b4d0f2961e4dd962e12c805b27aa175"
+      sha256 "88fe3665149876f9fb986d8403eac62387fd7a9ff0aa0905e7735ca4b99af97e"
       url "#{GITHUB_URL}/#{version}/phrase_linux_386.tar.gz"
     else
-      sha256 "55242600f0fab459fdada18e4700a938e2ccdeb3c3543a67438465aa6e5250d8"
+      sha256 "1fc7c01fb3481a28622e8c8a16a0eae9a0a55445c3107dc6e1c56685b679e25e"
       url "#{GITHUB_URL}/#{version}/phrase_linux_amd64.tar.gz"
     end
   else
-    sha256 "1ad896746769c904d2fb8cbed7611a66935db8db4f7747edfc02b5be8beef81c"
+    sha256 "bd8ddad51791ba45c33177d878633243e5ee8806948df360745b4203aea3a83a"
     url "#{GITHUB_URL}/#{version}/phrase_macosx_amd64.tar.gz"
   end
 
