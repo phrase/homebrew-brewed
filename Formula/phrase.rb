@@ -13,7 +13,7 @@ class Phrase < Formula
       url "#{GITHUB_URL}/#{version}/phrase_linux_amd64.tar.gz"
     end
   else
-    sha256 "47796c8317197b8d322f529b1340af2ad3ad48f57216192d4ccf954212fccc5a"
+    sha256 "aebdfd6567588f9bf24e45952539178bc9f5e6733629efddf318b63b378df0d4"
     url "#{GITHUB_URL}/#{version}/phrase_macosx_amd64.tar.gz"
   end
 
