@@ -10,14 +10,14 @@ class Phraseapp < Formula
   version '1.17.1'
   if OS.linux?
     if OS.respond_to?(:bits) && OS.bits == 32
-      sha256 'a8f0cb812fc929c59bd819f83983e6b146f2aec82a65b4776508b92ffa90d555'
+      sha256 'a8f0cb812fc929c59bd819f83983e6b146f2aec82a65b4776508b92ffa90d555' # phraseapp_linux_386.tar.gz
       url "#{GITHUB_URL}/#{version}/phraseapp_linux_386.tar.gz"
     else
-      sha256 '15c6d63c8d49ab789b18b759bb591cc4881d8695f574b5c1b363eb06817bedb5'
+      sha256 '15c6d63c8d49ab789b18b759bb591cc4881d8695f574b5c1b363eb06817bedb5' # phraseapp_linux_amd64.tar.gz
       url "#{GITHUB_URL}/#{version}/phraseapp_linux_amd64.tar.gz"
     end
   else
-    sha256 'cca6c48f06066da8a31237f01211d8f565b3b8358ace2bdebb59c97e03439aa1'
+    sha256 'cca6c48f06066da8a31237f01211d8f565b3b8358ace2bdebb59c97e03439aa1' # phraseapp_macosx_amd64.tar.gz
     url "#{GITHUB_URL}/#{version}/phraseapp_macosx_amd64.tar.gz"
   end
 
