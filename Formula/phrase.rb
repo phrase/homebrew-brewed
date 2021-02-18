@@ -13,13 +13,8 @@ class Phrase < Formula
       url "#{GITHUB_URL}/#{version}/phrase_linux_amd64.tar.gz"
     end
   else
-    if OS.host_cpu == 'x86'
-      sha256 "1571d337e7aa965a264f0bee5b4cf693a0e13c2ca8f60eb74b641858fca6c3bd" # phrase_macosx_amd64.tar.gz
-      url "#{GITHUB_URL}/#{version}/phrase_macosx_amd64.tar.gz"
-    else
-      sha256 "a48d42e24a0bb27e117244528cd8805ef498ffa99db052726e2c257dcc7df2dd" # phrase_macosx_arm64.tar.gz
-      url "#{GITHUB_URL}/#{version}/phrase_macosx_arm64.tar.gz"
-    end
+    sha256 "1571d337e7aa965a264f0bee5b4cf693a0e13c2ca8f60eb74b641858fca6c3bd" # phrase_macosx_amd64.tar.gz
+    url "#{GITHUB_URL}/#{version}/phrase_macosx_amd64.tar.gz"
   end
 
   def install
