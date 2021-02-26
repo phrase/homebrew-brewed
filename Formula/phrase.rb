@@ -13,8 +13,13 @@ class Phrase < Formula
       url "#{GITHUB_URL}/#{version}/phrase_linux_amd64.tar.gz"
     end
   else
-    sha256 "73991a68cd6329be163e87adbf0c30cbe3587e8a9fb62bea0cf86b32596209c3" # phrase_macosx_amd64.tar.gz
-    url "#{GITHUB_URL}/#{version}/phrase_macosx_amd64.tar.gz"
+    if RUBY_PLATFORM.include?('arm64')
+      sha256 "d7a7b6d53893a4c3a4ba60bdcd6d8c17f8d06b61d695cef76e332a894bf1e7ce" # phrase_macosx_arm64.tar.gz
+      url "#{GITHUB_URL}/#{version}/phrase_macosx_arm64.tar.gz"
+    else
+      sha256 "73991a68cd6329be163e87adbf0c30cbe3587e8a9fb62bea0cf86b32596209c3" # phrase_macosx_amd64.tar.gz
+      url "#{GITHUB_URL}/#{version}/phrase_macosx_amd64.tar.gz"
+    end
   end
 
   def install
