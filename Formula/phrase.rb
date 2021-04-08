@@ -1,5 +1,5 @@
 class Phrase < Formula
-  desc "Experimental Phrase CLI Tool - API client binary"
+  desc "Phrase CLI Tool - API client binary"
   homepage "https://phrase.com/cli"
   GITHUB_URL = "https://github.com/phrase/phrase-cli/releases/download".freeze
 
