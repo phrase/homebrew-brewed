@@ -3,21 +3,21 @@ class Phrase < Formula
   homepage "https://phrase.com/cli"
   GITHUB_URL = "https://github.com/phrase/phrase-cli/releases/download".freeze
 
-  version "2.6.1"
+  version "2.6.2"
   if OS.linux?
     if OS.respond_to?(:bits) && OS.bits == 32
-      sha256 "5bbb5ac3294b7dadcde3a741b379e548cb3e4083565ed64a061c5b93633d7cad" # phrase_linux_386.tar.gz
+      sha256 "b23116f23030009a99d3057caec2c12a2f9e86707a8169334498c0ca939b9fba" # phrase_linux_386.tar.gz
       url "#{GITHUB_URL}/#{version}/phrase_linux_386.tar.gz"
     else
-      sha256 "cece4a0f50ef6d93c0619aec33e23585a8830af7a80c0a594e257860d76b3afc" # phrase_linux_amd64.tar.gz
+      sha256 "ca840e751bade9a4b0771b516f2cfc9483e7c836ee00305b2eeb952be6b1f724" # phrase_linux_amd64.tar.gz
       url "#{GITHUB_URL}/#{version}/phrase_linux_amd64.tar.gz"
     end
   else
     if RUBY_PLATFORM.include?('arm64')
-      sha256 "0efda3a84e821fab35c0e68770183813d649d002c70f0eb44a9e62272360340a" # phrase_macosx_arm64.tar.gz
+      sha256 "c513820ba1920ad241dbd5ad86e814da4330919a345db21521b8241b3f176027" # phrase_macosx_arm64.tar.gz
       url "#{GITHUB_URL}/#{version}/phrase_macosx_arm64.tar.gz"
     else
-      sha256 "119a809697a630e6ec81c83b8bfc60fc2a2b74b10e1cf45947af7b7af2341e78" # phrase_macosx_amd64.tar.gz
+      sha256 "c7ce7990cbb9d3e0631d375e263f915f5b5f64cdc99f6496ccc6d55afaeed3f5" # phrase_macosx_amd64.tar.gz
       url "#{GITHUB_URL}/#{version}/phrase_macosx_amd64.tar.gz"
     end
   end
