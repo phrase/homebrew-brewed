@@ -1,14 +1,17 @@
+## [Deprecated]
+The CLI is now part of the brew core repository and can be installed with `brew install phrase-cli`
+
 # Homebrew tap for Phrase
 
 Add tap to your local homebrew installation:
 
     brew tap phrase/brewed
 
-Install phraseapp client version 1.x: 
+Install phraseapp client version 1.x:
 
     brew install phraseapp
 
-Install phrase client version 2.x: 
+Install phrase client version 2.x:
 
     brew install phrase
 
